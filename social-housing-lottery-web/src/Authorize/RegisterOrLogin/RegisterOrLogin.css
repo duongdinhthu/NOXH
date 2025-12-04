@@ -1,0 +1,87 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*background-color: #4682B4; !* Nền màu xanh dương *!*/
+    position: relative; /* Để ảnh có thể được căn chỉnh tuyệt đối */
+}
+
+.auth-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://vipcorel.com/attachments/hoi-thi-tuyen-truyen-vien-gioi-2-png.26620'); /* Nền ảnh trống đồng */
+    background-size: cover; /* Làm cho ảnh phủ hết màn hình */
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Đảm bảo ảnh nằm dưới nội dung */
+}
+
+.auth-form {
+    width: 400px;
+    padding: 20px;
+    background-color: white; /* Nền trắng cho form */
+    border-radius: 8px;
+    color: #333;
+    z-index: 1; /* Đảm bảo form nằm trên nền ảnh */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+.form-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

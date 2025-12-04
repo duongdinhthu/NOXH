@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+
+/* --- YOUR CUSTOM CSS BELOW THIS LINE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #213547;
+    background-color: #ffffff;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+/* Link */
+a {
+    font-weight: 500;
+    color: #0056b3;
+}
+
+a:hover {
+    color: #003f82;
+}
+
+/* Buttons */
+button {
+    border-radius: 8px;
+}
+
+/* --- END CUSTOM CSS --- */
+
+@tailwind utilities;
